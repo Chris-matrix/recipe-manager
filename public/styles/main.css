@@ -1,70 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f5f5;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f1e3;
+  color: #333;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-sm {
+  margin-right: 5px;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
+.btn-primary {
+  background-color: #4ecdc4;
+  border-color: #4ecdc4;
+}
+
+.btn-primary:hover {
+  background-color: #45b7aa;
+  border-color: #45b7aa;
+}
+
+.btn-secondary {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.btn-secondary:hover {
+  background-color: #ff5252;
+  border-color: #ff5252;
+}
+
+.btn-danger {
+  background-color: #fc5c65;
+  border-color: #fc5c65;
+}
+
+.btn-danger:hover {
+  background-color: #eb3b5a;
+  border-color: #eb3b5a;
 }
 
 h1 {
-    color: #0e77e0;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #ff6b6b;
+  font-weight: bold;
 }
 
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.card-title {
+  color: #4ecdc4;
+  font-weight: bold;
 }
 
-div {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
+@media (max-width: 768px) {
+  .btn-sm {
     margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-textarea {
-    height: 150px;
-}
-
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+  }
 }
